@@ -1,1 +1,1 @@
-# typescript-burritos
+# burritos

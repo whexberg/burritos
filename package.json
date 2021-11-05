@@ -1,0 +1,38 @@
+{
+    "name": "burritos",
+    "author": "William Hexberg",
+    "description": "",
+    "version": "0.0.1",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/**/*"
+    ],
+    "scripts": {
+        "prebuild": "npm run clean",
+        "build": "tsc -p ./build.tsconfig.json",
+        "clean": "rm -rf ./dist ./burritos-*.tgz",
+        "test": "jest",
+        "prepack": "npm run build"
+    },
+    "keywords": [
+        "typescript",
+        "burritos",
+        "monads"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/whexberg/burritos.git"
+    },
+    "bugs": {
+        "url": "https://github.com/whexberg/burritos/issues"
+    },
+    "homepage": "https://github.com/whexberg/burritos#readme",
+    "devDependencies": {
+        "@types/jest": "^27.0.2",
+        "jest": "^27.3.1",
+        "ts-jest": "^27.0.7",
+        "typescript": "^4.4.4"
+    }
+}
